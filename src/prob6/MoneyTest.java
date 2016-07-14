@@ -7,9 +7,16 @@ public class MoneyTest {
         Money two   = new Money( 2 );
         Money three = new Money( 3 );
         Money ten   = new Money( 10 );
+        
+        System.out.println(two.add( three ).toString());
+        System.out.println( five.minus( two ).toString());
+        System.out.println( five.multiply( two ));
+        System.out.println(two.add( three ));
         if( five.equals( two.add( three ) ) && three.equals( five.minus( two ) ) && ten.equals( five.multiply( two ) ) && two.equals( ten.devide(five) ) )  {
             System.out.println( "Money Class 구현을 완료 하였습니다." );
         }
+
+
 	}
 
 }
